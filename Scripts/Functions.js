@@ -236,8 +236,10 @@ export function setRoundOf8Phase(img) {
       ? rivalElement.childNodes[3]
       : rivalElement.childNodes[1];
 
-  let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+  /*let defaultImg =
+    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
+  let defaultImg = "./images/f3f3f3bg.svg";
+  console.log(img.src);
   if (img.src !== defaultImg && rivalImg.src !== defaultImg) {
     let rank16 = img.parentNode;
     let quarterfinalistId = rank16.dataset.goingto;
@@ -269,8 +271,9 @@ export function setSemifinal(img) {
       ? rivalElement.childNodes[3]
       : rivalElement.childNodes[1];
 
-  let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+  /*let defaultImg =
+    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
+  let defaultImg = "./images/f3f3f3bg.svg";
 
   if (img.src !== defaultImg && rivalImg.src !== defaultImg) {
     let rank8 = img.parentNode;
@@ -301,8 +304,9 @@ export function setFinal(img) {
       ? rivalElement.childNodes[3]
       : rivalElement.childNodes[1];
 
-  let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+  /*let defaultImg =
+    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
+  let defaultImg = "./images/f3f3f3bg.svg";
 
   if (img.src !== defaultImg && rivalImg.src !== defaultImg) {
     let rank4 = img.parentNode;
@@ -335,8 +339,9 @@ export function setChampion(img, teamContainerEntities) {
       ? rivalElement.childNodes[3]
       : rivalElement.childNodes[1];
 
-  let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+  /*let defaultImg =
+    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
+  let defaultImg = "./images/f3f3f3bg.svg";
 
   if (img.src !== defaultImg && rivalImg.src !== defaultImg) {
     //console.log(img.parentNode);
@@ -390,8 +395,9 @@ function verifyQualifiers() {
   });
   let champion = new Champion(document.getElementById("champion-spot"));
 
-  let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+  /*let defaultImg =
+    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
+  let defaultImg = "./images/f3f3f3bg.svg";
   //ENCONTRA A IMAGEM QUE NÃO ESTÁ MAIS SELECIONADA, E APAGA SUA IMAGEM
   rank2Container.forEach((rank2) => {
     let i = 0;
@@ -408,8 +414,9 @@ function verifyQualifiers() {
     });
 
     if (existsInFinal === false) {
-      rank2.img.src =
-        "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+      /*rank2.img.src =
+        "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
+      rank2.img.src = "./images/f3f3f3bg.svg";
       rank2.img.style.border = "2px solid #777";
       rank2.initials.innerText = "";
       champion.championImg.src = "./images/champsilverbg.svg";
@@ -435,8 +442,8 @@ function verifyQualifiers() {
     });
 
     if (existsInSemifinal === false) {
-      rank4.img.src =
-        "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+      rank4.img.src = "./images/f3f3f3bg.svg";
+      /* "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
       rank4.img.style.border = "2px solid #777";
       rank4.initials.innerText = "";
     }
@@ -455,8 +462,8 @@ function verifyQualifiers() {
     });
 
     if (existsInRoundOf4 === false) {
-      rank8.img.src =
-        "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+      rank8.img.src = "./images/f3f3f3bg.svg";
+      /*  "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
       rank8.img.style.border = "2px solid #777";
       rank8.initials.innerText = "";
     }
@@ -482,8 +489,8 @@ function verifyWinners() {
     rank2Container.push(new Rank(rank2));
   });
   let championImg = document.getElementById("flag-img-playoffs-champion");
-  let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+  let defaultImg = "./images/f3f3f3bg.svg";
+  /* "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
 
   rank16Container.forEach((rank16) => {
     let existsInFinal = false;
@@ -642,8 +649,8 @@ export function shareResults() {
 
   let champion = new Champion(document.getElementById("champion-spot"));
 
-  let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
+  /*let defaultImg =
+    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
 
   let championIsEmpty =
     champion.championTeamName.innerText === "" ? true : false;
