@@ -151,7 +151,7 @@ export function createTeamsEntities(/*teamsContainer*/) {
         break;
     }
     const teamInfo = new Team(teamElement, teamName, teamInitials);
-    //console.log(teamInfo);
+
     teamContainerEntities.push(teamInfo);
   });
 
@@ -236,11 +236,9 @@ export function setRoundOf8Phase(img) {
       ? rivalElement.childNodes[3]
       : rivalElement.childNodes[1];
 
-  /*let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
   let defaultImg =
     "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
-  console.log("img", img.src, "rival", rivalImg.src, "default", defaultImg);
+
   if (img.src !== defaultImg && rivalImg.src !== defaultImg) {
     let rank16 = img.parentNode;
     let quarterfinalistId = rank16.dataset.goingto;
@@ -272,8 +270,6 @@ export function setSemifinal(img) {
       ? rivalElement.childNodes[3]
       : rivalElement.childNodes[1];
 
-  /*let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
   let defaultImg =
     "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
 
@@ -306,8 +302,6 @@ export function setFinal(img) {
       ? rivalElement.childNodes[3]
       : rivalElement.childNodes[1];
 
-  /*let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
   let defaultImg =
     "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
 
@@ -342,16 +336,11 @@ export function setChampion(img, teamContainerEntities) {
       ? rivalElement.childNodes[3]
       : rivalElement.childNodes[1];
 
-  /*let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
   let defaultImg =
     "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
 
   if (img.src !== defaultImg && rivalImg.src !== defaultImg) {
-    //console.log(img.parentNode);
-
     let rank2 = img.parentNode;
-    //console.log("rank2child", rank2.childNodes[1].innerText);
 
     let championId = rank2.dataset.goingto;
     let championName = "";
@@ -399,8 +388,6 @@ function verifyQualifiers() {
   });
   let champion = new Champion(document.getElementById("champion-spot"));
 
-  /*let defaultImg =
-    "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
   let defaultImg =
     "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
   //ENCONTRA A IMAGEM QUE NÃO ESTÁ MAIS SELECIONADA, E APAGA SUA IMAGEM
@@ -419,8 +406,6 @@ function verifyQualifiers() {
     });
 
     if (existsInFinal === false) {
-      /*rank2.img.src =
-        "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
       rank2.img.src =
         "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
       rank2.img.style.border = "2px solid #777";
@@ -450,7 +435,7 @@ function verifyQualifiers() {
     if (existsInSemifinal === false) {
       rank4.img.src =
         "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
-      /* "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
+
       rank4.img.style.border = "2px solid #777";
       rank4.initials.innerText = "";
     }
@@ -471,7 +456,7 @@ function verifyQualifiers() {
     if (existsInRoundOf4 === false) {
       rank8.img.src =
         "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
-      /*  "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
+
       rank8.img.style.border = "2px solid #777";
       rank8.initials.innerText = "";
     }
@@ -499,7 +484,6 @@ function verifyWinners() {
   let championImg = document.getElementById("flag-img-playoffs-champion");
   let defaultImg =
     "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
-  /* "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
 
   rank16Container.forEach((rank16) => {
     let existsInFinal = false;
@@ -623,7 +607,6 @@ export function setAllRandomWinners(
 ) {
   let groupContainer = [];
   document.querySelectorAll(".group-container").forEach((group) => {
-    //console.log(group);
     groupContainer.push(group);
   });
 
@@ -691,20 +674,7 @@ export function shareResults() {
     any2Empty,
   ];
   let isAllChecked = allRanksChecked.some((rank) => rank === true);
-  /*
-  console.log(
-    "rank16incompleto? ",
-    any16Empty,
-    " rank8incompleto? ",
-    any8Empty,
-    " rank4incompleto? ",
-    any4Empty,
-    " rank2incompleto? ",
-    any2Empty,
-    " campeao vazio? ",
-    championIsEmpty
-  );
-  */
+
   if (isAllChecked === true) {
     shareBtn.disabled = "true";
     shareBtn.style.backgroundColor = "rgb(165, 163, 163)";
@@ -745,7 +715,6 @@ export function campaign(teamContainerEntities) {
       }
     });
   });
-  console.log(rank16Names);
 
   rank8Container.forEach((rank8) => {
     teamContainerEntities.some((team) => {
@@ -754,7 +723,6 @@ export function campaign(teamContainerEntities) {
       }
     });
   });
-  console.log(rank8Names);
 
   rank4Container.forEach((rank4) => {
     teamContainerEntities.some((team) => {
@@ -763,7 +731,6 @@ export function campaign(teamContainerEntities) {
       }
     });
   });
-  console.log(rank4Names);
 
   rank2Container.forEach((rank2) => {
     teamContainerEntities.some((team) => {
@@ -772,7 +739,6 @@ export function campaign(teamContainerEntities) {
       }
     });
   });
-  console.log(rank2Names);
 
   Swal.fire({
     title: "Simulador da Copa do Mundo 2022",
