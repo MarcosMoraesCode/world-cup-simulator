@@ -240,7 +240,7 @@ export function setRoundOf8Phase(img) {
     "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";*/
   let defaultImg =
     "https://marcosmoraesnf.github.io/world-cup-simulator/images/f3f3f3bg.svg";
-  console.log(img.src);
+  console.log("img", img.src, "rival", rivalImg.src, "default", defaultImg);
   if (img.src !== defaultImg && rivalImg.src !== defaultImg) {
     let rank16 = img.parentNode;
     let quarterfinalistId = rank16.dataset.goingto;
