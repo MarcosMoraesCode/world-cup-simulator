@@ -763,7 +763,6 @@ export function campaign(teamContainerEntities) {
 
   Swal.fire({
     title: "Simulador da Copa do Mundo 2022",
-    heigth: 650,
     confirmButtonColor: "#06aa48",
     confirmButtonText: "Copiar",
     html:
@@ -802,7 +801,6 @@ export function campaign(teamContainerEntities) {
   Swal.getConfirmButton().addEventListener("click", function () {
     Swal.fire({
       width: 300,
-      heigth: 150,
       position: "bottom-end",
       icon: "success",
       title: "Copiado!",
