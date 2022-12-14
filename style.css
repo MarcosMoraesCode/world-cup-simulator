@@ -1,0 +1,660 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  height: 20vh;
+  background-color: #06aa48;
+  background-image: url(./images/headerbg1440.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-bottom: #06aa48 1px solid;
+  align-items: center;
+  color: #f3f3f3;
+  padding: 25px;
+}
+.header-style {
+  justify-content: space-around;
+}
+.main-title {
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 40px;
+}
+body {
+  height: 80vh;
+}
+h1 {
+  font-family: "Poor Story", cursive;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.main-subtitle {
+  font-family: "Poor Story", cursive;
+  font-weight: 200;
+  color: black;
+  font-size: 23px;
+}
+h2 {
+  font-size: medium;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 150px;
+}
+h3 {
+  font-size: medium;
+  text-align: center;
+  font-weight: bolder;
+}
+/*PASSAR H4 PRO BOTÃO E H6 PRA POSIÇÃO*/
+
+h4 {
+  color: #777;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  margin: 2px;
+  padding-right: 10px;
+}
+h5 {
+  text-align: center;
+}
+.stage-title {
+  display: grid;
+  font-size: 30px;
+  font-family: "Poor Story", cursive;
+  font-weight: bolder;
+  margin: 20px 0px 20px 0px;
+
+  text-align: center;
+}
+.flag-and-name {
+  text-align: center;
+  width: 80%;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.team-name {
+  margin-left: 10px;
+  padding-bottom: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: start;
+}
+.group-subtitle {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h6 {
+  font-family: "Poor Story", cursive;
+  font-weight: bolder;
+  text-align: center;
+  margin: 40px;
+}
+.container-groups-a-to-h {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.default-title {
+  width: 200px;
+  display: grid;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+}
+.group-container {
+  display: grid;
+}
+.group-stage {
+  margin: 10px -6px 10px -6px;
+  max-width: 250px;
+}
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin: 1.5px;
+  width: 200px;
+  height: 35px;
+}
+.form-position {
+  display: flex;
+  justify-content: end;
+}
+.form-check {
+  margin-left: -1px;
+}
+.form-check-input {
+  border-radius: 50%;
+  border: solid 2px #06aa48;
+  width: 18px;
+  height: 18px;
+}
+.form-check-input:checked {
+  border-radius: 50%;
+  border: solid 2px grey;
+  background-color: #06aa48;
+  width: 18px;
+  height: 18px;
+}
+.random-winners-btn {
+  font-size: small;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #06aa48;
+  color: white;
+  margin: 2px;
+  border-radius: 3px;
+  border: none;
+  width: 200px;
+  height: 35px;
+  margin-top: 5px;
+}
+.flag-img {
+  align-items: center;
+  margin-bottom: 9px;
+  margin-left: 10px;
+  width: 20px;
+  height: 15px;
+}
+
+.play-offs {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.play-offs-board {
+  height: 750px;
+  background-image: url(./images/bgplayoffs992.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team-initials,
+.champion-text {
+  width: 15px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.round-of-16 {
+  width: 75px;
+
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.round-of-8 {
+  width: 75px;
+
+  position: relative;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.round-of-4 {
+  width: 110px;
+
+  position: relative;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.final-round {
+  width: 130px;
+
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right-ranks {
+  align-items: flex-end;
+}
+.left-ranks {
+  align-items: flex-start;
+}
+.rank-16 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.rank-8 {
+  /*height: 48px;*/
+  display: flex;
+  align-items: center;
+}
+.rank-4 {
+  display: flex;
+  align-items: center;
+}
+.rank-2 {
+  display: flex;
+  align-items: center;
+}
+.champion-cup {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 220px;
+  width: 200px;
+}
+.invisible-box {
+  height: 220px;
+  width: 200px;
+}
+.champion-cup-img {
+  margin-top: 40px;
+  height: 120px;
+  width: 200px;
+  margin-bottom: 6px;
+}
+.champion-spot {
+  width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.champion-name {
+  font-weight: 400;
+  font-size: 15px;
+}
+.champion-team-name {
+  font-weight: 600;
+  font-size: 17px;
+}
+.playoffs-description {
+  color: #06aa48;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.flag-img-playoffs-16,
+.flag-img-playoffs-8 {
+  cursor: pointer;
+  margin: 20px;
+  border: solid 2px #777;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+}
+
+.flag-img-playoffs-4,
+.flag-img-playoffs-2 {
+  cursor: pointer;
+  margin: 20px;
+  border: solid 2px #777;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+.flag-img-playoffs-champion {
+  margin: 20px;
+  border: solid 2px #777;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.option-btns-div {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.option-btn {
+  font-size: large;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin: 2px;
+  border-radius: 3px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  margin: 20px;
+}
+#fill {
+  background-color: #06aa48;
+}
+#share {
+  background-color: rgb(165, 163, 163);
+}
+#restart {
+  background-color: #06aa48;
+}
+
+footer {
+  height: 80px;
+  background-color: #06aa48;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dev-info {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.invisible-div {
+  width: 125px;
+  height: 30px;
+}
+.copy {
+  color: white;
+  font-weight: 400;
+}
+.icons-container {
+  width: 125px;
+}
+.icons {
+  width: 60px;
+  height: 60px;
+  margin: 0px;
+}
+
+@media (max-width: 991px) {
+  .play-offs-board {
+    width: fit-content;
+    height: fit-content;
+    background-image: none;
+    background-image: url(./images/playoffsbg990.svg);
+  }
+  .round-of-16 {
+    margin: auto;
+    min-height: 53px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .round-of-8 {
+    height: 53px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: space-around;
+  }
+
+  .round-of-4 {
+    height: 77px;
+    min-width: 500px;
+    flex-direction: row;
+  }
+  .final-round {
+    height: 90px;
+    min-width: 500px;
+    flex-direction: row;
+  }
+  .champion-spot {
+    height: 90px;
+    width: 500px;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+  }
+  .flag-img-playoffs-16,
+  .flag-img-playoffs-8 {
+    width: 33px;
+    height: 33px;
+  }
+  .flag-img-playoffs-4,
+  .flag-img-playoffs-2 {
+    width: 39px;
+    height: 39px;
+  }
+  .flag-img-playoffs-champion {
+    width: 55px;
+    height: 55px;
+  }
+  .champion-cup {
+    width: 100px;
+  }
+  .invisible-box {
+    width: 100px;
+  }
+  .left-res {
+    margin-right: 14px;
+  }
+  .right-res {
+    margin-left: 14px;
+  }
+  .champion-cup {
+    align-items: center;
+  }
+  .group-stage {
+    min-width: 250px;
+    margin: 10px 15px 10px 15px;
+  }
+  .group-subtitle {
+    padding-right: 20px;
+  }
+  .groups-a-to-d,
+  .groups-e-to-h {
+    justify-content: center;
+  }
+  .right-ranks {
+    align-items: center;
+  }
+  .left-ranks {
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .play-offs-board {
+    width: 500px;
+    background-image: url(./images/playoffsbg767.svg);
+  }
+  .rank-16 {
+    flex-direction: column;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .rank-8 {
+    flex-direction: column-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-around;
+  }
+  .rank-4 {
+    flex-direction: column-reverse;
+  }
+  .team-initials {
+    margin-left: -10px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+
+  .group-stage {
+    min-width: 250px;
+    margin: 10px 0px 10px 0px;
+  }
+  .round-of-8 {
+    height: 53px;
+    width: 500px;
+
+    margin-right: 300px;
+
+    justify-content: space-around;
+    padding: 0;
+  }
+  .round-of-16 {
+    width: 500px;
+  }
+  .left-adjustments {
+    padding: 0;
+  }
+  .left-res {
+    margin-left: -3px;
+  }
+  .right-res {
+    margin-left: 3px;
+  }
+  .icons {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 570px) {
+  .round-of-16 {
+    width: min-content;
+    min-height: 53px;
+
+    justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .round-of-8 {
+    height: 53px;
+    width: fit-content;
+
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .round-of-4 {
+    height: 77px;
+
+    flex-direction: row;
+  }
+  .final-round {
+    height: 90px;
+
+    flex-direction: row;
+  }
+  .champion-spot {
+    height: 90px;
+    max-width: 400px;
+    min-width: 300px;
+    flex-direction: row;
+
+    justify-content: space-around;
+  }
+  .group-stage {
+    width: 300px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .champion-cup-img {
+    height: 100px;
+    width: 100px;
+  }
+  .invisible-box {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .play-offs-board {
+    background-image: url(./images/bgplayoffs320.svg);
+    background-size: contain;
+  }
+  .group-stage {
+    margin-left: 20px;
+  }
+  .play-offs-board {
+    width: 320px;
+  }
+  .rank-8 {
+    flex-direction: column;
+    width: 80px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .rank-4 {
+    flex-direction: column;
+  }
+  .round-of-16 {
+    min-width: 320px;
+  }
+  .left-res {
+    margin-left: -2px;
+  }
+  .right-res {
+    margin-right: 100px;
+  }
+  .round-of-8 {
+    margin-left: -1px;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 320px;
+  }
+  .round-of-4 {
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 320px;
+  }
+  .final-round {
+    min-width: 320px;
+  }
+  .rank-16 {
+    width: 35px;
+  }
+  .main-title {
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 25px;
+  }
+  .option-btns-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .option-btn {
+    margin-bottom: -8px;
+  }
+  footer {
+    height: 95px;
+  }
+  .dev-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .invisible-div {
+    width: 2px;
+    height: 2px;
+  }
+  .icons-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
