@@ -646,7 +646,7 @@ export function shareResults() {
     "http://127.0.0.1:5500/Projeto%20-%20FIFA%20WorldCup/images/f3f3f3bg.svg";
 
   let championIsEmpty =
-    champion.championTeamName.innerText.lenght > 2 ? true : false;
+    champion.championTeamName.innerText === "" ? true : false;
 
   let shareBtn = document.getElementById("share");
   let any16Empty = false;
