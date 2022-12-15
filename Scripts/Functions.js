@@ -814,7 +814,9 @@ export function campaign(teamContainerEntities) {
     ${rank2Names[0]} x ${rank2Names[1]}
     
     Campeão:
-    ${champion.championTeamName.innerText}`);
+    ${champion.championTeamName.innerText}
+    
+    Você também pode fazer seu palpite clicando aqui: https://marcosmoraesnf.github.io/world-cup-simulator/`);
   });
   /*
   Swal.fire(
