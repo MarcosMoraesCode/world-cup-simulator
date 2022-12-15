@@ -19,8 +19,8 @@ header {
   justify-content: space-around;
 }
 .main-title {
-  margin-top: 20px;
-  padding-top: 15px;
+  margin-top: 25px;
+
   font-size: 40px;
 }
 body {
@@ -531,7 +531,7 @@ footer {
     height: 40px;
   }
 }
-
+/*
 @media (max-width: 570px) {
   .round-of-16 {
     width: min-content;
@@ -580,11 +580,11 @@ footer {
     height: 100px;
     width: 100px;
   }
-}
+}*/
 
 @media (max-width: 500px) {
   .play-offs-board {
-    background-image: url(./images/bgplayoffs320.svg);
+    background-image: url(./images/playoffsbg320.png);
     background-size: contain;
   }
   .group-stage {
@@ -603,8 +603,16 @@ footer {
     flex-direction: column;
   }
   .round-of-16 {
-    min-width: 320px;
+    width: min-content;
+    min-height: 53px;
+
+    justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
   }
+  /*.round-of-16 {
+    min-width: 320px;
+  }*/
   .left-res {
     margin-left: -2px;
   }
